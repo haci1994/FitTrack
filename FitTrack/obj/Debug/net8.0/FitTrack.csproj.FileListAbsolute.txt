@@ -1,0 +1,15 @@
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\bin\Debug\net8.0\FitTrack.exe
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\bin\Debug\net8.0\FitTrack.deps.json
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\bin\Debug\net8.0\FitTrack.runtimeconfig.json
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\bin\Debug\net8.0\FitTrack.dll
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\bin\Debug\net8.0\FitTrack.pdb
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.AssemblyInfoInputs.cache
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.AssemblyInfo.cs
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.csproj.CoreCompileInputs.cache
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.sourcelink.json
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.dll
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\refint\FitTrack.dll
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.pdb
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\FitTrack.genruntimeconfig.cache
+C:\Users\mmzad\Desktop\M.Haji - Homework\FitTrack\FitTrack\obj\Debug\net8.0\ref\FitTrack.dll
