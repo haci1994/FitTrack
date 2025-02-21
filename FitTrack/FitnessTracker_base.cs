@@ -8,12 +8,13 @@ namespace FitTrack
 {
     public class FitnessTracker_base
     {
-        private int _totalSteps = 0;
-        private int _userIndex = 0;
-        private string DeviceName { get; set; }
-        private int BatteryLife { get; set; }
+        protected int _totalSteps = 0;
+        protected int _userIndex = 0;
+        protected int _stepsLimit = 0;
+        protected string DeviceName { get; set; }
+        protected int BatteryLife { get; set; }
         private int TotalSteps { get; set; }
-        private string[] Users { get; set; }
+        protected string[] Users { get; set; }
         
         public FitnessTracker_base(string name)
         {
@@ -21,11 +22,12 @@ namespace FitTrack
             BatteryLife = 24;
             TotalSteps = 0;
             Users = new string[3];
+            _stepsLimit = 50000;
         }
 
-        public void TrackSteps (int steps)
+        public virtual void TrackSteps (int steps)
         {
-            if (steps > 1 && steps < 50000)
+            if (steps > 1 && steps < _stepsLimit)
             {
                 _totalSteps += steps;
                 Console.WriteLine($"You have tracked {steps} steps. Total is {_totalSteps}");
@@ -33,7 +35,7 @@ namespace FitTrack
             else { Console.WriteLine("Invalid number of steps. Please enter a value between 1 and 50,000."); }
         }
 
-        public void AddUser(string userName)
+        public virtual void AddUser(string userName)
         {
             if (_userIndex >= 3)
             {
