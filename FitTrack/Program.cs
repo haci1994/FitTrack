@@ -19,28 +19,36 @@
 
 
             simpleTracker.AddUser("Haji");
-            simpleTracker.AddUser("Haji");
-            simpleTracker.AddUser("Haji");
-            simpleTracker.AddUser("Haji");
+            simpleTracker.AddUser("Elmin");
+            simpleTracker.AddUser("Togrul");
+            simpleTracker.AddUser("Kamal");
 
             simpleTracker.TrackSteps(10000);
             simpleTracker.TrackSteps(35000);
             simpleTracker.TrackSteps(15000);
 
-            simpleTracker.PrintInfo();
+            
 
             proTracker.TrackSteps(75000);
             proTracker.TrackSteps(35000);
             proTracker.TrackSteps(175000);
 
-            proTracker.AddUser("Haji");
-            proTracker.AddUser("Haji");
-            proTracker.AddUser("Haji");
-            proTracker.AddUser("Haji");
-            proTracker.AddUser("Haji");
-            proTracker.AddUser("Haji");
+            proTracker.AddUser("Elxan");
+            proTracker.AddUser("Tural");
+            proTracker.AddUser("Camal");
+            proTracker.AddUser("Fikret");
+            proTracker.AddUser("Arzu");
+            proTracker.AddUser("Sevda");
+
+           
+
+            proTracker.DeleteUsers("Tural");
+
+            proTracker.SetCurrentActivity("Running");
+            simpleTracker.SetCurrentActivity("Cycling");
 
             proTracker.PrintInfo();
+            simpleTracker.PrintInfo();
         }
     }
 }

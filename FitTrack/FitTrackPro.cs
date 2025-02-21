@@ -17,6 +17,7 @@ namespace FitTrack
             _userIndex = 0;
         }
 
+        
         public override void TrackSteps (int steps)
         {
             if (steps > 1 && steps < _stepsLimit)

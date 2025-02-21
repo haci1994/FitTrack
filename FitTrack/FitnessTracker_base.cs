@@ -15,7 +15,9 @@ namespace FitTrack
         protected int BatteryLife { get; set; }
         private int TotalSteps { get; set; }
         protected string[] Users { get; set; }
-        
+
+        protected string CurrentActivity { get; set; }
+
         public FitnessTracker_base(string name)
         {
             DeviceName = name;
@@ -25,7 +27,7 @@ namespace FitTrack
             _stepsLimit = 50000;
         }
 
-        public virtual void TrackSteps (int steps)
+        public virtual void TrackSteps(int steps)
         {
             if (steps > 1 && steps < _stepsLimit)
             {
@@ -48,9 +50,34 @@ namespace FitTrack
             _userIndex++;
         }
 
-        public void PrintInfo ()
+       
+
+
+        public void DeleteUsers(string name)
         {
-            Console.WriteLine($"FitTrack Pro is called {DeviceName}, it has {BatteryLife} hours of battery life, {_totalSteps} total steps, and {_userIndex} users.");
+            int i = Array.IndexOf(Users, name);
+
+            if (i > -1)
+            {
+                Console.WriteLine($"User {Users[i]} has been deleterd.");
+                Users[i] = null;
+                _userIndex--;
+            }
+            else
+            {
+                Console.WriteLine("User not found. No user was deleted.");
+            }
         }
+
+        public void SetCurrentActivity (string activity)
+        {
+            CurrentActivity = activity;
+        }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine($"FitTrack Pro is called {DeviceName}, it has {BatteryLife} hours of battery life, {_totalSteps} total steps, and {_userIndex} users. Current activity is {CurrentActivity}.");
+        }
+
     }
 }
